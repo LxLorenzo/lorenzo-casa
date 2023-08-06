@@ -13,6 +13,10 @@
 	-webkit-text-fill-color: transparent;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background-image: linear-gradient(to bottom right, #e4e6ff 0%, white 40%, #e4ebff 100%);
 }
