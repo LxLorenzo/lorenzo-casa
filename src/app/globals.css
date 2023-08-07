@@ -20,3 +20,17 @@ html {
 body {
 	background-image: linear-gradient(to bottom right, #e4e6ff 0%, white 40%, #e4ebff 100%);
 }
+
+.menu {
+	background: rgba(255, 255, 255, .7);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+}
+
+.link {
+	background: rgba(255, 255, 255, 0);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(1px);
+	-webkit-backdrop-filter: blur(1px);
+}
