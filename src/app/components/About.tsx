@@ -4,13 +4,13 @@ import React from 'react'
 const About = () => {
   return (
     <section
-      className="container mx-auto h-screen px-4 md:px-8 py-28 lg:p-28 flex flex-col items-center md:flex-row md:gap-32"
+      className="container mx-auto px-2 sm:px-4 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-28 flex flex-col items-center"
       id="about"
     >
       <h2 className="text-[2rem] md:text-[2.5rem] lg:text-[3rem] xl:text-[4rem] 2xl:text-[5rem] font-bold text-primary">
         Sobre mim
       </h2>
-      <div className="flex flex-col mt-12 items-center">
+      <div className="flex flex-col mt-12 items-center lg:flex-row-reverse lg:gap-12">
         <Image
           src="/perfil.jpg"
           width={300}
