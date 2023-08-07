@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Mulish } from 'next/font/google'
 
 import Header from './components/Header'
+import Footer from './components/Footer'
 
 const mulish = Mulish({
   subsets: ['latin'],
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className={mulish.className}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )

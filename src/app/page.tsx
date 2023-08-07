@@ -1,5 +1,7 @@
 import About from './components/About'
+import Contact from './components/Contact'
 import Hero from './components/Hero'
+import Projects from './components/Projects'
 import ScrollToTop from './components/ScrollToTop'
 
 export default function Home() {
@@ -8,6 +10,8 @@ export default function Home() {
       <Hero />
       <About />
       <ScrollToTop />
+      <Projects />
+      <Contact />
     </main>
   )
 }
