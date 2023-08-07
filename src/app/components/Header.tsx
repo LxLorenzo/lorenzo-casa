@@ -1,8 +1,8 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
-import { FaBars } from 'react-icons/fa'
 import { RiCloseFill } from 'react-icons/ri'
 
 const Header = () => {
@@ -54,8 +54,11 @@ const Header = () => {
         </div>
       ) : (
         <div className="flex lg:hidden">
-          <FaBars
-            fontSize={20}
+          <Image
+            src="/menu.svg"
+            width={28}
+            height={28}
+            alt="Menu"
             onClick={() => setIsMenuOpen((prev) => !prev)}
             className="cursor-pointer"
           />
