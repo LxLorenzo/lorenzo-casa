@@ -7,12 +7,12 @@ import { RiArrowDownDoubleFill } from 'react-icons/ri'
 
 const Hero = () => {
   return (
-    <section className="container mx-auto h-[calc(100vh-4.75rem)] relative px-4 md:px-8 py-28 lg:p-28 text-center flex flex-col">
-      <div className="absolute w-[200px] sm:w-[350px] h-[40px] bg-firstGradientPattern blur-[110px] left-10 lg:left-[100px] lg:top-[130px] 2xl:top-[200px] 2xl:left-[110px]" />
-      <div className="absolute w-[200px] sm:w-[350px] h-[40px] bg-secondGradientPattern blur-[110px] bottom-[300px] right-10 lg:right-[100px]" />
-      <h1 className="text-[2.5rem] md:text-[3rem] lg:text-[3.8rem] xl:text-[5rem] 2xl:text-[5.5rem] font-bold text-primary flex flex-col">
+    <section className="container mx-auto h-[calc(100vh-4.75rem)] relative px-2 sm:px-4 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-28 text-center flex flex-col">
+      <div className="absolute w-[200px] sm:w-[350px] h-[40px] bg-firstGradientPattern blur-[110px] left-10 lg:left-[100px] lg:top-[130px] 2xl:top-[200px] 2xl:left-[110px] z-20" />
+      <div className="absolute w-[200px] sm:w-[350px] h-[40px] bg-secondGradientPattern blur-[110px] bottom-[300px] right-10 lg:right-[100px] z-20" />
+      <h1 className="text-[2.5rem] sm:text-[3.5rem] md:text-[3.3rem] lg:text-[4.2rem] xl:text-[5rem] 2xl:text-[5.5rem] font-bold text-primary flex flex-col">
         Seu próximo desenvolvedor
-        <span className="gradient__text font-black text-[2.8rem] md:text-[3.3rem] lg:text-[4rem] xl:text-[5.3rem] 2xl:text-[5.8rem]">
+        <span className="gradient__text font-black text-[2.8rem] sm:text-[3.1rem] md:text-[3.6rem] lg:text-[4.6rem] xl:text-[5.3rem] 2xl:text-[5.8rem]">
           Front-End :)
         </span>
       </h1>
