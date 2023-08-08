@@ -1,6 +1,8 @@
 import React from 'react'
 import Project from './Project'
 
+import projects from '../contants/projects'
+
 const Projects = () => {
   return (
     <section
@@ -13,11 +15,15 @@ const Projects = () => {
       <p className="text-zinc-500 text-center">
         Conheça algum de meus projetos e meus conhecimentos.
       </p>
-      <div className="flex flex-col gap-12 sm:flex-wrap sm:flex-row justify-center">
-        <Project />
-        <Project />
-        <Project />
-        <Project />
+      <div className="flex flex-col gap-6 xl:gap-12 sm:flex-wrap sm:flex-row justify-center">
+        {projects.map((project: any) => (
+          <Project
+            key={project.id}
+            title={project.title}
+            description={project.description}
+            img={project.img}
+          />
+        ))}
       </div>
     </section>
   )
