@@ -4,6 +4,12 @@
 
 :root {
   --gradient-text: linear-gradient(89.97deg, #c471ed, #f64f59);
+
+	--gradient-background: linear-gradient(to bottom right, #e4e6ff 0%, white 40%, #e4ebff 100%);
+
+	--toastify-color-light: var(--gradient-background);
+	--toastify-color-progress-success: transparent;
+	--toastify-icon-color-success: #09090B;
 }
 
 .gradient__text {
@@ -18,7 +24,7 @@ html {
 }
 
 body {
-	background-image: linear-gradient(to bottom right, #e4e6ff 0%, white 40%, #e4ebff 100%);
+	background-image: var(--gradient-background);
 }
 
 .menu {

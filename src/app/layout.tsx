@@ -4,6 +4,7 @@ import { Mulish } from 'next/font/google'
 
 import Header from './components/Header'
 import Footer from './components/Footer'
+import ToastProvider from './providers/ToastProvider'
 
 const mulish = Mulish({
   subsets: ['latin'],
@@ -23,9 +24,11 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={mulish.className}>
-        <Header />
-        {children}
-        <Footer />
+        <ToastProvider>
+          <Header />
+          {children}
+          <Footer />
+        </ToastProvider>
       </body>
     </html>
   )
