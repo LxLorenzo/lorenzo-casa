@@ -10,11 +10,11 @@ const About = () => {
       <h2 className="text-[2rem] md:text-[2.5rem] lg:text-[3rem] xl:text-[4rem] 2xl:text-[5rem] font-bold text-primary">
         Sobre mim
       </h2>
-      <div className="flex flex-col mt-12 items-center lg:flex-row-reverse lg:gap-12">
+      <div className="flex flex-col mt-12 items-center lg:items-start lg:flex-row-reverse lg:gap-12">
         <Image
           src="/perfil.jpg"
-          width={300}
-          height={300}
+          width={400}
+          height={400}
           alt="Perfil"
           className="rounded-full border-[3px] border-zinc-950"
         />
