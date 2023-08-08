@@ -40,21 +40,27 @@ const Header = () => {
           />
           <nav className="flex flex-col gap-12 pb-[-160px] w-full">
             <ul className="gap-12 text-zinc-700 font-semibold flex flex-col">
-              <li className="hover:text-zinc-950 link py-1.5 rounded-md">
-                <Link href="#about" onClick={() => setIsMenuOpen(false)}>
-                  Sobre
-                </Link>
-              </li>
-              <li className="hover:text-zinc-950 link py-1.5 rounded-md">
-                <Link href="#projects" onClick={() => setIsMenuOpen(false)}>
-                  Projetos
-                </Link>
-              </li>
-              <li className="hover:text-zinc-950 link py-1.5 rounded-md">
-                <Link href="#contact" onClick={() => setIsMenuOpen(false)}>
-                  Contato
-                </Link>
-              </li>
+              <Link
+                className="hover:text-zinc-950 link py-1.5 rounded-md"
+                href="#about"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Sobre
+              </Link>
+              <Link
+                className="hover:text-zinc-950 link py-1.5 rounded-md"
+                href="#projects"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Projetos
+              </Link>
+              <Link
+                className="hover:text-zinc-950 link py-1.5 rounded-md"
+                href="#contact"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contato
+              </Link>
             </ul>
           </nav>
           <Link

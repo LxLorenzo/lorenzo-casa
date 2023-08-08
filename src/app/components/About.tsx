@@ -18,7 +18,8 @@ const About = () => {
           alt="Perfil"
           className="rounded-full border-[3px] border-zinc-950"
         />
-        <div className="text-zinc-500 mt-12 text-justify">
+        <div className="text-zinc-500 mt-12 text-justify relative">
+          <div className="absolute w-[150px] sm:w-[200px] h-[40px] bg-firstGradientPattern blur-[150px] z-20" />
           <p>
             Sou um entusiasta da web e sou movido pelo desafio de criar
             interfaces interativas e responsivas que proporcionem uma
@@ -33,6 +34,7 @@ const About = () => {
             técnico e habilidades de comunicação para alcançar resultados
             excepcionais.
           </p>
+          <div className="absolute w-[150px] sm:w-[200px] h-[40px] bg-secondGradientPattern blur-[150px] right-0 z-20" />
         </div>
       </div>
     </section>
