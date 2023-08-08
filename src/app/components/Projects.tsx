@@ -1,7 +1,7 @@
 import React from 'react'
 import Project from './Project'
 
-import projectsContants from '../contants/ProjectConstants'
+import projectData from '../data/ProjectData'
 
 const Projects = () => {
   return (
@@ -16,7 +16,7 @@ const Projects = () => {
         Conheça algum de meus projetos e meus conhecimentos.
       </p>
       <div className="flex flex-col gap-6 xl:gap-12 sm:flex-wrap sm:flex-row justify-center">
-        {projectsContants.map((project: any) => (
+        {projectData.map((project: any) => (
           <Project
             key={project.id}
             title={project.title}

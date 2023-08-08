@@ -1,8 +1,9 @@
-const projectsConstants = [
+const projectData = [
   {
     id: 1,
     title: 'Promptopia',
-    description: 'Descrição do Projeto 1',
+    shortName: 'promptopia',
+    description: 'Crie sua conta e compartilhe seus prompts!',
     img: '/projeto01.jpg',
     repositoryUrl: 'https://github.com/LxLorenzo/Promptopia',
     projectUrl: 'https://promptopia-lxlorenzo.vercel.app/',
@@ -17,7 +18,8 @@ const projectsConstants = [
   {
     id: 2,
     title: 'FSW Trips',
-    description: 'Descrição do Projeto 2',
+    shortName: 'fsw-trips',
+    description: 'Reserve suas viagens para seus destinos favoritos!',
     img: '/projeto02.jpg',
     repositoryUrl: 'https://github.com/LxLorenzo/fsw-trips',
     projectUrl: 'https://fsw-trips-lxlorenzo.vercel.app/',
@@ -33,7 +35,8 @@ const projectsConstants = [
   {
     id: 3,
     title: 'Gericht',
-    description: 'Descrição do Projeto 3',
+    shortName: 'gericht',
+    description: 'Conheça o melhor restaurante da cidade de New York!',
     img: '/projeto03.jpg',
     repositoryUrl: 'https://github.com/LxLorenzo/gericht-restaurant',
     projectUrl: 'https://gerich-restaurant.vercel.app/',
@@ -42,7 +45,8 @@ const projectsConstants = [
   {
     id: 4,
     title: 'HooBank',
-    description: 'Descrição do Projeto 4',
+    shortName: 'hoobank',
+    description: 'Crie sua conta e gerencie seu dinheiro de forma fácil!',
     img: '/projeto04.jpg',
     repositoryUrl: 'https://github.com/LxLorenzo/bank_modern_app',
     projectUrl: 'https://bank-modern-app.vercel.app/',
@@ -51,7 +55,8 @@ const projectsConstants = [
   {
     id: 5,
     title: 'GPT-Project',
-    description: 'Descrição do Projeto 5',
+    shortName: 'gpt-project',
+    description: 'Conheça a mais nova tecnologia de inteligência artificial!',
     img: '/projeto05.jpg',
     repositoryUrl: 'https://github.com/LxLorenzo/gptproject',
     projectUrl: 'https://gptproject.vercel.app/',
@@ -60,7 +65,8 @@ const projectsConstants = [
   {
     id: 6,
     title: 'Multi-Step-Form',
-    description: 'Descrição do Projeto 6',
+    shortName: 'multi-step-form',
+    description: 'Formulário de cadastro de empresas com múltiplas etapas!',
     img: '/projeto06.jpg',
     repositoryUrl: 'https://github.com/LxLorenzo/Multi-Step-Form',
     projectUrl: 'https://lxlorenzo.github.io/Multi-Step-Form/',
@@ -68,4 +74,4 @@ const projectsConstants = [
   },
 ]
 
-export default projectsConstants
+export default projectData
