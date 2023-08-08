@@ -1,9 +1,20 @@
+'use client'
+
 import React from 'react'
 import Button from './Button'
 import { BsDiscord, BsGithub, BsLinkedin, BsWhatsapp } from 'react-icons/bs'
 import { MdOutlineAlternateEmail } from 'react-icons/md'
+import { toast } from 'react-toastify'
 
 const Contact = () => {
+  const handleCopy = () => {
+    navigator.clipboard.writeText('lorenzolx.')
+    toast.success('Copiado para a área de transferência!', {
+      position: 'bottom-center',
+      autoClose: 1500,
+    })
+  }
+
   return (
     <section
       className="container mx-auto px-2 sm:px-4 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-28 flex flex-col items-center gap-12"
@@ -40,7 +51,7 @@ const Contact = () => {
           <BsGithub />
           GitHub
         </Button>
-        <Button className="flex items-center gap-3 mt-0">
+        <Button className="flex items-center gap-3 mt-0" onClick={handleCopy}>
           <BsDiscord />
           lorenzolx.
         </Button>
