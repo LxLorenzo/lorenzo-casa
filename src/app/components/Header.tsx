@@ -32,25 +32,25 @@ const Header = () => {
         Get in Touch
       </Link>
       {isMenuOpen ? (
-        <div className="menu z-10 lg:hidden fixed flex flex-col right-0 top-0 w-2/3 h-screen px-4 py-5 rounded-l-lg items-center text-center justify-between">
+        <div className="menu z-10 lg:hidden fixed flex flex-col right-0 top-0 w-3/5 h-screen px-4 py-5 rounded-l-lg items-center text-center justify-between">
           <RiCloseFill
             onClick={() => setIsMenuOpen((prev) => !prev)}
             className="self-end cursor-pointer"
             fontSize={28}
           />
-          <nav className="flex flex-col gap-12 pb-[-160px]">
+          <nav className="flex flex-col gap-12 pb-[-160px] w-full">
             <ul className="gap-12 text-zinc-700 font-semibold flex flex-col">
-              <li className="hover:text-zinc-950 link px-[72px] py-1 rounded-md">
+              <li className="hover:text-zinc-950 link py-1.5 rounded-md">
                 <Link href="#about" onClick={() => setIsMenuOpen(false)}>
                   Sobre
                 </Link>
               </li>
-              <li className="hover:text-zinc-950 link px-[72px] py-1 rounded-md">
+              <li className="hover:text-zinc-950 link py-1.5 rounded-md">
                 <Link href="#projects" onClick={() => setIsMenuOpen(false)}>
                   Projetos
                 </Link>
               </li>
-              <li className="hover:text-zinc-950 link px-[72px] py-1 rounded-md">
+              <li className="hover:text-zinc-950 link py-1.5 rounded-md">
                 <Link href="#contact" onClick={() => setIsMenuOpen(false)}>
                   Contato
                 </Link>
@@ -59,7 +59,7 @@ const Header = () => {
           </nav>
           <Link
             href="#contact"
-            className="2xl:basis-52 text-zinc-700 font-semibold hover:text-zinc-950 mb-40 link px-14 py-1 rounded-md"
+            className="2xl:basis-52 text-zinc-700 font-semibold hover:text-zinc-950 mb-40 link w-full py-1.5 rounded-md"
             onClick={() => setIsMenuOpen(false)}
           >
             Get in Touch

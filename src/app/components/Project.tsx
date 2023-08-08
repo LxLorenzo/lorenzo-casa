@@ -60,7 +60,7 @@ interface ProjectProps {
 
 const Project = ({ title, description, img, icons }: ProjectProps) => {
   return (
-    <div className="max-w-[400px] md:max-w-[46%] lg:max-w-[400px] flex flex-col border border-zinc-950 rounded-lg">
+    <div className="max-w-[400px] md:max-w-[46%] lg:max-w-[400px] flex flex-col border border-zinc-950 rounded-lg transition hover:scale-[1.02]">
       <Image
         src={img}
         width={400}
@@ -80,7 +80,7 @@ const Project = ({ title, description, img, icons }: ProjectProps) => {
               return (
                 <Icon
                   key={index}
-                  className="w-4 h-4 text-zinc-500 cursor-pointer"
+                  className="w-4 h-4 text-zinc-500 cursor-pointer transition hover:text-zinc-800"
                   title={iconTextMap[icon]}
                 />
               )
