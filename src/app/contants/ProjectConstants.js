@@ -37,6 +37,7 @@ const projectsConstants = [
     img: '/projeto03.jpg',
     repositoryUrl: 'https://github.com/LxLorenzo/gericht-restaurant',
     projectUrl: 'https://gerich-restaurant.vercel.app/',
+    icons: ['SiReact', 'SiCss3'],
   },
   {
     id: 4,
@@ -45,6 +46,7 @@ const projectsConstants = [
     img: '/projeto04.jpg',
     repositoryUrl: 'https://github.com/LxLorenzo/bank_modern_app',
     projectUrl: 'https://bank-modern-app.vercel.app/',
+    icons: ['SiReact', 'SiVite', 'SiTailwindcss'],
   },
   {
     id: 5,
@@ -53,14 +55,16 @@ const projectsConstants = [
     img: '/projeto05.jpg',
     repositoryUrl: 'https://github.com/LxLorenzo/gptproject',
     projectUrl: 'https://gptproject.vercel.app/',
+    icons: ['SiReact', 'SiCss3'],
   },
   {
     id: 6,
     title: 'Multi-Step-Form',
     description: 'Descrição do Projeto 2',
-    img: '/projeto05.jpg',
+    img: '/projeto06.jpg',
     repositoryUrl: 'https://github.com/LxLorenzo/Multi-Step-Form',
     projectUrl: 'https://lxlorenzo.github.io/Multi-Step-Form/',
+    icons: ['SiHtml5', 'SiCss3', 'SiJavascript'],
   },
 ]
 

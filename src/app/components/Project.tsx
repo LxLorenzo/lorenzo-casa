@@ -12,6 +12,11 @@ import {
   SiTailwindcss,
   SiMongodb,
   SiMongoose,
+  SiVite,
+  SiReact,
+  SiCss3,
+  SiHtml5,
+  SiJavascript,
 } from 'react-icons/si'
 
 const iconMap: Record<string, IconType> = {
@@ -23,6 +28,27 @@ const iconMap: Record<string, IconType> = {
   SiTailwindcss,
   SiMongodb,
   SiMongoose,
+  SiVite,
+  SiReact,
+  SiCss3,
+  SiHtml5,
+  SiJavascript,
+}
+
+const iconTextMap: Record<string, string> = {
+  SiNextdotjs: 'Next.js',
+  SiTypescript: 'TypeScript',
+  SiPrisma: 'Prisma',
+  SiSupabase: 'Supabase',
+  SiStripe: 'Stripe',
+  SiTailwindcss: 'Tailwind CSS',
+  SiMongodb: 'MongoDB',
+  SiMongoose: 'Mongoose',
+  SiVite: 'Vite',
+  SiReact: 'React',
+  SiCss3: 'CSS',
+  SiHtml5: 'HTML',
+  SiJavascript: 'JavaScript',
 }
 
 interface ProjectProps {
@@ -48,11 +74,16 @@ const Project = ({ title, description, img, icons }: ProjectProps) => {
         <p className="text-zinc-500 text-sm mb-5">{description}</p>
         <div className="flex justify-between items-center">
           <div className="flex gap-2">
-            {/* <div className="w-5 h-5 bg-black" /> */}
             {icons.map((icon, index) => {
               const Icon = iconMap[icon]
               if (!Icon) return null
-              return <Icon key={index} className="w-4 h-4 text-zinc-500" />
+              return (
+                <Icon
+                  key={index}
+                  className="w-4 h-4 text-zinc-500 cursor-pointer"
+                  title={iconTextMap[icon]}
+                />
+              )
             })}
           </div>
           <Button className="mt-0">Ver mais</Button>
