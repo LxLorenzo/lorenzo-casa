@@ -4,7 +4,7 @@ import { FiExternalLink } from 'react-icons/fi'
 
 const Footer = () => {
   return (
-    <section className="flex mx-auto flex-col py-28 items-center bg-zinc-950 gap-12 sm:flex-row sm:justify-around">
+    <section className="flex mx-auto flex-col py-14 items-center bg-zinc-950 gap-12 sm:flex-row sm:justify-around">
       <div className="flex flex-col text-center text-zinc-50 text-sm gap-5">
         <h4 className="text-zinc-500 font-semibold text-2xl">Navegue</h4>
         <Link href="">Início</Link>
