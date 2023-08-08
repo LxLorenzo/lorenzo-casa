@@ -86,7 +86,7 @@ const Project = ({ title, description, img, icons }: ProjectProps) => {
               )
             })}
           </div>
-          <Button className="mt-0">Ver mais</Button>
+          <Button className="mt-0 py-0">Ver mais</Button>
         </div>
       </div>
     </div>
