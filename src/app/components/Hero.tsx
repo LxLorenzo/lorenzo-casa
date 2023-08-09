@@ -25,7 +25,7 @@ const Hero = () => {
       <div className="flex items-center justify-center gap-2 sm:gap-5">
         <Button
           variant="black"
-          className="flex items-center gap-3"
+          className="flex items-center gap-3 font-bold"
           href="https://github.com/LxLorenzo"
           target="_blank"
         >
@@ -34,7 +34,7 @@ const Hero = () => {
         </Button>
         <Button
           variant="white"
-          className="flex items-center gap-3"
+          className="flex items-center gap-3 font-bold"
           href="https://www.linkedin.com/in/lorenzocasa/"
           target="_blank"
         >
