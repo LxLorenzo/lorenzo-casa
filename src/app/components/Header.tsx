@@ -9,7 +9,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
     <header className="container mx-auto flex justify-between items-center px-2 sm:px-4 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-5 relative">
-      <Link href="" className="text-2xl md:text-3xl font-bold gradient__text">
+      <Link href="/" className="text-2xl md:text-3xl font-bold gradient__text">
         &lt;LorenzoLx /&gt;
       </Link>
       <nav className="hidden lg:flex">
@@ -18,7 +18,7 @@ const Header = () => {
             <Link href="#about">Sobre</Link>
           </li>
           <li className="hover:text-zinc-950">
-            <Link href="#projetos">Projetos</Link>
+            <Link href="#projects">Projetos</Link>
           </li>
           <li className="hover:text-zinc-950">
             <Link href="#contact">Contato</Link>
