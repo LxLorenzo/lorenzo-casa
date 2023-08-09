@@ -8,7 +8,7 @@ import ToastProvider from './providers/ToastProvider'
 
 const mulish = Mulish({
   subsets: ['latin'],
-  weight: ['400', '600', '700', '900'],
+  weight: ['400', '500', '600', '700', '900'],
 })
 
 export const metadata: Metadata = {
