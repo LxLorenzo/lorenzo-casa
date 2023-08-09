@@ -1,9 +1,10 @@
 import Link from 'next/link'
 import React from 'react'
 import { FiExternalLink } from 'react-icons/fi'
-import projectData from '../data/ProjectData'
+import { IProject, getProjects } from '../data'
 
 const Footer = () => {
+  const { projects } = getProjects()
   return (
     <section className="flex mx-auto flex-col py-14 items-center bg-zinc-950 gap-12 sm:flex-row sm:justify-around">
       <div className="flex flex-col text-center text-zinc-50 text-sm gap-5">
@@ -15,9 +16,9 @@ const Footer = () => {
       </div>
       <div className="flex flex-col text-center text-zinc-50 text-sm gap-5">
         <h4 className="text-zinc-50 font-semibold text-2xl">Projetos</h4>
-        {projectData.slice(0, 4).map((project) => (
-          <Link href={`/${project.shortName}`} key={project.id}>
-            {project.title}
+        {projects.slice(0, 4).map((project: IProject) => (
+          <Link href={`/${project.path}`} key={project.id}>
+            {project.name}
           </Link>
         ))}
       </div>

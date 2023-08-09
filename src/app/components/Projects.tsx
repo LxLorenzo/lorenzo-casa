@@ -1,9 +1,8 @@
-import React from 'react'
 import Project from './Project'
-
-import projectData from '../data/ProjectData'
+import { IProject, getProjects } from '../data'
 
 const Projects = () => {
+  const { projects } = getProjects()
   return (
     <section
       className="container mx-auto px-2 sm:px-4 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-28 flex flex-col items-center gap-12"
@@ -16,14 +15,8 @@ const Projects = () => {
         Conheça algum de meus projetos e meus conhecimentos.
       </p>
       <div className="flex flex-col gap-6 xl:gap-12 sm:flex-wrap sm:flex-row justify-center">
-        {projectData.map((project: any) => (
-          <Project
-            key={project.id}
-            title={project.title}
-            description={project.description}
-            img={project.img}
-            icons={project.icons || []}
-          />
+        {projects.map((project: IProject) => (
+          <Project key={project.id} project={project} />
         ))}
       </div>
     </section>
