@@ -2,7 +2,7 @@ import React from 'react'
 import Button from './Button'
 import Link from 'next/link'
 
-import { BsGithub, BsLinkedin } from 'react-icons/bs'
+import { BsDownload, BsGithub, BsLinkedin } from 'react-icons/bs'
 import { RiArrowDownDoubleFill } from 'react-icons/ri'
 
 const Hero = () => {
@@ -40,6 +40,16 @@ const Hero = () => {
         >
           <BsLinkedin />
           LinkedIn
+        </Button>
+        <Button
+          variant="black"
+          className="flex items-center gap-3 font-bold"
+          href="/CV Lorenzo Ferrini Gueda Casa.pdf"
+          target="_blank"
+          download={'CV Lorenzo Ferrini Gueda Casa.pdf'}
+        >
+          <BsDownload />
+          Download CV
         </Button>
       </div>
       <Link
