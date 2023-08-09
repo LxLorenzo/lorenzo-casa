@@ -1,12 +1,12 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Mulish } from 'next/font/google'
+import { Archivo } from 'next/font/google'
 
 import Header from './components/Header'
 import Footer from './components/Footer'
 import ToastProvider from './providers/ToastProvider'
 
-const mulish = Mulish({
+const archivo = Archivo({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700', '900'],
 })
@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={mulish.className}>
+      <body className={archivo.className}>
         <ToastProvider>
           <Header />
           {children}
