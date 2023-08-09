@@ -15,13 +15,13 @@ const Header = () => {
       <nav className="hidden lg:flex">
         <ul className="flex gap-24 text-zinc-700 font-semibold">
           <li className="hover:text-zinc-950">
-            <Link href="#about">Sobre</Link>
+            <Link href="/#about">Sobre</Link>
           </li>
           <li className="hover:text-zinc-950">
-            <Link href="#projects">Projetos</Link>
+            <Link href="/#projects">Projetos</Link>
           </li>
           <li className="hover:text-zinc-950">
-            <Link href="#contact">Contato</Link>
+            <Link href="/#contact">Contato</Link>
           </li>
         </ul>
       </nav>
@@ -42,21 +42,21 @@ const Header = () => {
             <ul className="gap-12 text-zinc-700 font-semibold flex flex-col">
               <Link
                 className="hover:text-zinc-950 link py-1.5 rounded-md"
-                href="#about"
+                href="/#about"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Sobre
               </Link>
               <Link
                 className="hover:text-zinc-950 link py-1.5 rounded-md"
-                href="#projects"
+                href="/#projects"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Projetos
               </Link>
               <Link
                 className="hover:text-zinc-950 link py-1.5 rounded-md"
-                href="#contact"
+                href="/#contact"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contato
@@ -64,7 +64,7 @@ const Header = () => {
             </ul>
           </nav>
           <Link
-            href="#contact"
+            href="/#contact"
             className="2xl:basis-52 text-zinc-700 font-semibold hover:text-zinc-950 mb-40 link w-full py-1.5 rounded-md"
             onClick={() => setIsMenuOpen(false)}
           >
