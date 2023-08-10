@@ -1,7 +1,7 @@
 'use client'
 
 import Button from '@/app/components/Button'
-import { IProject } from '@/app/data'
+import { IProject, IProjectPath } from '@/app/data'
 import Image from 'next/image'
 import React from 'react'
 import { BsGithub } from 'react-icons/bs'
@@ -9,26 +9,38 @@ import { FiExternalLink } from 'react-icons/fi'
 
 interface IProps {
   project: IProject
+  params: { path: IProjectPath }
 }
 
-const Hero = ({ project }: IProps) => {
+const Hero = ({ project, params }: IProps) => {
+  console.log(params.path)
   return (
     <section className="container mx-auto px-2 sm:px-4 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-28 flex flex-col items-center justify-center">
       <div className="flex flex-col md:flex-row gap-24 items-center">
-        <div className="flex flex-col md:basis-[500px] md:items-end md:text-end">
-          <div className="flex gap-5">
-            <Image
-              src="/promptopia-logo.svg"
-              alt={project.name}
-              width={50}
-              height={50}
-            />
+        {params.path !== 'promptopia' && (
+          <div className="flex flex-col md:basis-[500px]">
             <h1 className="text-[2rem] md:text-[2.5rem] lg:text-[3rem] xl:text-[3.5rem] 2xl:text-[4rem] font-bold text-primary">
               {project.name}
             </h1>
+            <p className="text-zinc-500">{project.short_description}</p>
           </div>
-          <p className="text-zinc-500">{project.short_description}</p>
-        </div>
+        )}
+        {params.path === 'promptopia' && (
+          <div className="flex flex-col md:basis-[500px] md:items-end md:text-end">
+            <div className="flex gap-5">
+              <Image
+                src="/promptopia-logo.svg"
+                alt={project.name}
+                width={50}
+                height={50}
+              />
+              <h1 className="text-[2rem] md:text-[2.5rem] lg:text-[3rem] xl:text-[3.5rem] 2xl:text-[4rem] font-bold text-primary">
+                {project.name}
+              </h1>
+            </div>
+            <p className="text-zinc-500">{project.short_description}</p>
+          </div>
+        )}
         <div className="relative flex items-center justify-center">
           <Image
             src={project.img}
