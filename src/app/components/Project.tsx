@@ -1,72 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import Button from './Button'
-import { IconType } from 'react-icons'
-import { IProject } from '../data'
-
-import {
-  SiNextdotjs,
-  SiTypescript,
-  SiPrisma,
-  SiSupabase,
-  SiStripe,
-  SiTailwindcss,
-  SiMongodb,
-  SiMongoose,
-  SiVite,
-  SiReact,
-  SiCss3,
-  SiHtml5,
-  SiJavascript,
-} from 'react-icons/si'
-
-const iconMap: Record<string, IconType> = {
-  SiNextdotjs,
-  SiTypescript,
-  SiPrisma,
-  SiSupabase,
-  SiStripe,
-  SiTailwindcss,
-  SiMongodb,
-  SiMongoose,
-  SiVite,
-  SiReact,
-  SiCss3,
-  SiHtml5,
-  SiJavascript,
-}
-
-const iconTextMap: Record<string, string> = {
-  SiNextdotjs: 'Next.js',
-  SiTypescript: 'TypeScript',
-  SiPrisma: 'Prisma',
-  SiSupabase: 'Supabase',
-  SiStripe: 'Stripe',
-  SiTailwindcss: 'Tailwind CSS',
-  SiMongodb: 'MongoDB',
-  SiMongoose: 'Mongoose',
-  SiVite: 'Vite',
-  SiReact: 'React',
-  SiCss3: 'CSS',
-  SiHtml5: 'HTML',
-  SiJavascript: 'JavaScript',
-}
-
-const iconColorMap: Record<string, string> = {
-  SiNextdotjs: 'hover:text-[#171616]',
-  SiTypescript: 'hover:text-[#3079c6]',
-  SiPrisma: 'hover:text-[#2c3749]',
-  SiSupabase: 'hover:text-[#5811ac]',
-  SiStripe: 'hover:text-[#625aff]',
-  SiTailwindcss: 'hover:text-[#38bcf9]',
-  SiMongodb: 'hover:text-[#00ed64]',
-  SiMongoose: 'hover:text-[#880101]',
-  SiVite: 'hover:text-[#bd34fe]',
-  SiReact: 'hover:text-[#097fa4]',
-  SiCss3: 'hover:text-[#1572b7]',
-  SiHtml5: 'hover:text-[#e64b23]',
-  SiJavascript: 'hover:text-[#f4dc1c]',
-}
+import { IProject, iconColorMap, iconMap, iconTextMap } from '../data'
 
 interface IProjectCard {
   project: IProject
@@ -103,7 +38,7 @@ const Project = ({ project }: IProjectCard) => {
             })}
           </div>
           <Button
-            href={`/${project.path}`}
+            href={`/project/${project.path}`}
             className="mt-0 px-4 py-2 sm:px-4 sm:py-2"
           >
             Ver mais
