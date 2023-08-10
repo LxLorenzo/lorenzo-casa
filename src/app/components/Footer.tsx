@@ -17,7 +17,7 @@ const Footer = () => {
       <div className="flex flex-col text-center text-zinc-50 text-sm gap-5">
         <h4 className="text-zinc-50 font-semibold text-2xl">Projetos</h4>
         {projects.slice(0, 4).map((project: IProject) => (
-          <Link href={`/${project.path}`} key={project.id}>
+          <Link href={`/project/${project.path}`} key={project.id}>
             {project.name}
           </Link>
         ))}
