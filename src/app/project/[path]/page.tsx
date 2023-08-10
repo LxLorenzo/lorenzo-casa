@@ -22,7 +22,7 @@ const ProjectDetails = ({ params }: { params: { path: IProjectPath } }) => {
   }
   return (
     <>
-      <Hero project={project} />
+      <Hero project={project} params={params} />
       <About project={project} />
       <Technologies project={project} />
     </>
