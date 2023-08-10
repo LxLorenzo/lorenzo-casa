@@ -14,7 +14,7 @@ const Button = ({ variant = 'white', className, ...props }: ButtonProps) => {
 
   const _className = twMerge(
     variants[variant],
-    'px-5 py-[10px] sm:px-6 text-sm lg:text-base sm:py-3 rounded-full font-semibold transition-all mt-10 cursor-pointer',
+    'px-5 py-[10px] sm:px-6 text-sm lg:text-base sm:py-3 rounded-full font-semibold transition-colors mt-10 cursor-pointer',
     className,
   )
 

@@ -22,28 +22,30 @@ const Hero = () => {
         <br />
         Saiba mais sobre mim e meus projetos.
       </p>
-      <div className="flex items-center justify-center gap-2 sm:gap-5">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-2 sm:gap-5">
+        <div className="flex gap-2 sm:gap-5">
+          <Button
+            variant="black"
+            className="flex items-center gap-3 font-bold"
+            href="https://github.com/LxLorenzo"
+            target="_blank"
+          >
+            <BsGithub />
+            GitHub
+          </Button>
+          <Button
+            variant="white"
+            className="flex items-center gap-3 font-bold"
+            href="https://www.linkedin.com/in/lorenzocasa/"
+            target="_blank"
+          >
+            <BsLinkedin />
+            LinkedIn
+          </Button>
+        </div>
         <Button
           variant="black"
-          className="flex items-center gap-3 font-bold"
-          href="https://github.com/LxLorenzo"
-          target="_blank"
-        >
-          <BsGithub />
-          GitHub
-        </Button>
-        <Button
-          variant="white"
-          className="flex items-center gap-3 font-bold"
-          href="https://www.linkedin.com/in/lorenzocasa/"
-          target="_blank"
-        >
-          <BsLinkedin />
-          LinkedIn
-        </Button>
-        <Button
-          variant="black"
-          className="flex items-center gap-3 font-bold"
+          className="flex items-center gap-3 font-bold mt-0 md:mt-10"
           href="/CV Lorenzo Ferrini Gueda Casa.pdf"
           target="_blank"
           download={'CV Lorenzo Ferrini Gueda Casa.pdf'}
@@ -54,7 +56,7 @@ const Hero = () => {
       </div>
       <Link
         href="#about"
-        className="text-zinc-400 self-center absolute bottom-[15%] animate-bounce p-5"
+        className="text-zinc-400 self-center absolute bottom-[10%] animate-bounce p-5"
       >
         <RiArrowDownDoubleFill size={24} />
       </Link>
