@@ -5,6 +5,7 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import { RiCloseFill } from 'react-icons/ri'
 import ThemeSwitcher from './ThemeSwitcher'
+import ReactCountryFlag from 'react-country-flag'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -80,7 +81,8 @@ const Header = () => {
             </Link>
           </ul>
         </nav>
-        <div className="font-semibold hover:text-zinc-950 w-full py-1.5 rounded-md absolute bottom-[25%] flex items-center justify-center">
+        <div className="font-semibold hover:text-zinc-950 w-full py-1.5 rounded-md absolute bottom-[25%] flex items-center justify-center gap-5">
+          <ReactCountryFlag countryCode="BR" svg className="text-xl" />
           <ThemeSwitcher />
         </div>
       </div>
