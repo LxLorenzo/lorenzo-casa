@@ -1,4 +1,4 @@
-import { IProject, iconColorMap, iconMap, iconTextMap } from '@/app/data'
+import { IProject, iconGroupColorMap, iconMap, iconTextMap } from '@/app/data'
 import React from 'react'
 
 interface IProps {
@@ -21,7 +21,7 @@ const Technologies = ({ project }: IProps) => {
               className="flex flex-col items-center mt-10 gap-1 cursor-default group"
             >
               <Icon
-                className={`w-10 h-10 transition text-zinc-500 dark:text-zinc-300 ${iconColorMap[icon]}
+                className={`w-10 h-10 transition text-zinc-500 dark:text-zinc-300 ${iconGroupColorMap[icon]} 
                 `}
               />
               <p className="text-center">{iconTextMap[icon]}</p>

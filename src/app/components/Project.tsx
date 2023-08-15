@@ -33,7 +33,9 @@ const Project = ({ project }: IProjectCard) => {
               return (
                 <Icon
                   key={index}
-                  className={`w-4 h-4 cursor-pointer transition text-zinc-500 dark:text-zinc-300 ${iconColorMap[icon]}`}
+                  className={`w-4 h-4 cursor-pointer transition duration-300 text-zinc-500 dark:text-zinc-300 ${
+                    'hover:text-[' + iconColorMap[icon] + ']'
+                  }`}
                   title={iconTextMap[icon]}
                 />
               )

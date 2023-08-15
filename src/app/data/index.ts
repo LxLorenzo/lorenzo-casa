@@ -93,7 +93,7 @@ export const iconTextMap: Record<string, string> = {
   SiJavascript: 'JavaScript',
 }
 
-export const iconColorMap: Record<string, string> = {
+export const iconGroupColorMap: Record<string, string> = {
   SiNextdotjs:
     '#171616 dark:group-hover:text-[#171616] group-hover:text-[#171616]',
   SiTypescript:
@@ -116,4 +116,20 @@ export const iconColorMap: Record<string, string> = {
   SiHtml5: '#e64b23 dark:group-hover:text-[#e64b23] group-hover:text-[#e64b23]',
   SiJavascript:
     '#f4dc1c dark:group-hover:text-[#f4dc1c] group-hover:text-[#f4dc1c]',
+}
+
+export const iconColorMap: Record<string, string> = {
+  SiNextdotjs: '#171616',
+  SiTypescript: '#3079c6',
+  SiPrisma: '#2c3749',
+  SiSupabase: '#5811ac',
+  SiStripe: '#625aff',
+  SiTailwindcss: '#38bcf9',
+  SiMongodb: '#00ed64',
+  SiMongoose: '#880101',
+  SiVite: '#bd34fe',
+  SiReact: '#097fa4',
+  SiCss3: '#1572b7',
+  SiHtml5: '#e64b23',
+  SiJavascript: '#f4dc1c',
 }
