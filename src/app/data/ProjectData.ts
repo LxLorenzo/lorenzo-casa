@@ -5,7 +5,6 @@ const projectsData: IProject[] = [
     id: 1,
     name: 'Promptopia',
     path: 'promptopia',
-    logo: '/promptopia-logo.svg',
     short_description: 'Crie sua conta e compartilhe seus prompts!',
     description:
       'Promptopia é uma rede social de compartilhamento de conteúdo por meio de prompts. Crie sua conta e compartilhe seus prompts com o mundo!',
