@@ -1,24 +1,21 @@
 'use client'
 
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useTheme } from 'next-themes'
 import { BiSun, BiMoon } from 'react-icons/bi'
+import { useLoaded } from '../hooks/useLoaded'
 
 const ThemeSwitcher = () => {
   const { theme, setTheme } = useTheme()
-
-  useEffect(() => {
-    setTheme('light')
-  }, [])
-
+  const loaded = useLoaded()
   return (
     <button
       onClick={() => (theme === 'light' ? setTheme('dark') : setTheme('light'))}
     >
-      {theme === 'dark' ? (
-        <BiMoon className="text-zinc-50" fontSize={20} />
-      ) : (
+      {theme === 'light' && loaded ? (
         <BiSun className="text-zinc-950" fontSize={20} />
+      ) : (
+        <BiMoon className="text-zinc-50" fontSize={20} />
       )}
     </button>
   )
