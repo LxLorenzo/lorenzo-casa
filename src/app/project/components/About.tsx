@@ -16,27 +16,16 @@ const About = ({ project }: IProps) => {
         O que é?
       </h2>
       <p className="text-center mt-10 max-w-[70%]">{project.description}</p>
-      {theme === 'white' ? (
-        <Button
-          variant="white"
-          className="bg-zinc-50 hover:bg-zinc-900 flex items-center gap-3"
-          href={project.url}
-          target="_blank"
-        >
-          <FiExternalLink />
-          Visitar agora
-        </Button>
-      ) : (
-        <Button
-          variant="white"
-          className="flex items-center gap-3"
-          href={project.url}
-          target="_blank"
-        >
-          <FiExternalLink />
-          Visitar agora
-        </Button>
-      )}
+
+      <Button
+        variant="white"
+        className="border-zinc-50 text-zinc-50 hover:bg-zinc-50 hover:text-zinc-950 flex items-center gap-3"
+        href={project.url}
+        target="_blank"
+      >
+        <FiExternalLink />
+        Visitar agora
+      </Button>
     </section>
   )
 }
