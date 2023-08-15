@@ -9,7 +9,7 @@ interface IProjectCard {
 
 const Project = ({ project }: IProjectCard) => {
   return (
-    <div className="max-w-[400px] md:max-w-[46%] lg:max-w-[400px] flex flex-col border border-zinc-950 rounded-lg transition hover:scale-[1.008]">
+    <div className="max-w-[400px] md:max-w-[46%] lg:max-w-[400px] flex flex-col border border-zinc-950 dark:border-zinc-50 rounded-lg transition duration-300 hover:scale-[1.025]">
       <Image
         src={project.img}
         width={400}
@@ -22,7 +22,9 @@ const Project = ({ project }: IProjectCard) => {
         <h3 className="text-2xl text-primary font-semibold mt-2">
           {project.name}
         </h3>
-        <p className="text-zinc-500 text-sm">{project.short_description}</p>
+        <p className="text-zinc-500 text-sm dark:text-zinc-200">
+          {project.short_description}
+        </p>
         <div className="flex justify-between items-center mt-5">
           <div className="flex gap-1.5">
             {project.icons.map((icon, index) => {
@@ -31,7 +33,7 @@ const Project = ({ project }: IProjectCard) => {
               return (
                 <Icon
                   key={index}
-                  className={`w-4 h-4 cursor-pointer transition text-zinc-500 ${iconColorMap[icon]}`}
+                  className={`w-4 h-4 cursor-pointer transition text-zinc-500 dark:text-zinc-300 ${iconColorMap[icon]}`}
                   title={iconTextMap[icon]}
                 />
               )

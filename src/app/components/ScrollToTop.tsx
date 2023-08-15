@@ -27,7 +27,7 @@ const ScrollToTop = () => {
       {toggleScroll && (
         <div>
           <BsArrowUpShort
-            className="hidden md:block fixed bottom-10 right-10 text-zinc-50 bg-zinc-950 rounded-sm text-4xl cursor-pointer"
+            className="hidden md:block fixed bottom-10 right-10 text-zinc-50 bg-zinc-950 dark:bg-zinc-50 dark:text-zinc-950 rounded-sm text-4xl cursor-pointer"
             onClick={handleScrollToTop}
           />
         </div>

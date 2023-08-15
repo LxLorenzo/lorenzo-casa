@@ -21,10 +21,27 @@
 
 html {
 	scroll-behavior: smooth;
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
 	background-image: var(--gradient-background);
+}
+
+@layer base {
+	body {
+		@apply dark:bg-none dark:bg-[#0e0e10]
+	}
+	h1,h2,h3,h4,h5,h6 {
+		@apply dark:text-zinc-50
+	}
+	.menu {
+		@apply dark:bg-gradient-to-b from-[#0e0e1071] via-[#0e0e109f] to-[#0e0e1071] bg-no-repeat
+	}
+	.link {
+		@apply dark:bg-[#ffffff15]
+	}
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -47,4 +64,15 @@ p {
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(1px);
 	-webkit-backdrop-filter: blur(1px);
+}
+
+::-webkit-scrollbar {
+  width: 0.625rem;
+  height: 0.625rem;
+	border-radius: 15px;
+}
+
+/* prettier-ignore */
+::-webkit-scrollbar-thumb {
+  @apply bg-zinc-300 dark:bg-zinc-50 rounded-lg
 }

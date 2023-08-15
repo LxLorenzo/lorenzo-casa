@@ -18,10 +18,14 @@ const Technologies = ({ project }: IProps) => {
           return (
             <div
               key={index}
-              className="flex flex-col items-center mt-10 gap-1 cursor-default"
+              className="flex flex-col items-center mt-10 gap-1 cursor-default group"
             >
               <Icon
-                className={`w-10 h-10 transition text-zinc-500 ${iconColorMap[icon]}`}
+                className={`w-10 h-10 transition text-zinc-500 dark:text-zinc-300 ${
+                  'hover:text-[' + iconColorMap[icon] + ']'
+                } ${'dark:hover:text[' + iconColorMap[icon] + ']'} 
+                ${iconColorMap[icon]}
+                `}
               />
               <p className="text-center">{iconTextMap[icon]}</p>
             </div>
