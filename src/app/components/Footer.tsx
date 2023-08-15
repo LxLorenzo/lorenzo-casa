@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="flex flex-col sm:flex-row container mx-auto justify-between gap-12 px-2 sm:px-4 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
         <div className="flex flex-col text-center text-zinc-50 text-sm gap-5">
           <h4 className="text-zinc-50 font-semibold text-2xl">Navegue</h4>
-          <Link href="" className="hover:text-zinc-400 transition">
+          <Link href="/" className="hover:text-zinc-400 transition">
             Início
           </Link>
           <Link href="#about" className="hover:text-zinc-400 transition">
@@ -19,7 +19,7 @@ const Footer = () => {
           <Link href="#projects" className="hover:text-zinc-400 transition">
             Projetos
           </Link>
-          <Link href="#contacth" className="hover:text-zinc-400 transition">
+          <Link href="#contact" className="hover:text-zinc-400 transition">
             Contato
           </Link>
         </div>
