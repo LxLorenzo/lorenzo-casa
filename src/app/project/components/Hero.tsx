@@ -38,11 +38,11 @@ const Hero = ({ project, params }: IProps) => {
           <div className="bg-zinc-950 w-20 h-5 absolute bottom-[-14px]" />
         </div>
       </div>
-      <div className="flex items-center justify-evenly w-full mt-10 md:mt-20">
+      <div className="flex items-center justify-evenly w-full mt-14 md:mt-20 flex-col sm:flex-row gap-6">
         {theme === 'light' ? (
           <Button
             variant="black"
-            className="flex items-center gap-3"
+            className="flex items-center gap-3 mt-0"
             href={project.repo_url}
             target="_blank"
           >
@@ -52,7 +52,7 @@ const Hero = ({ project, params }: IProps) => {
         ) : (
           <Button
             variant="white"
-            className="flex items-center gap-3"
+            className="flex items-center gap-3 mt-0"
             href={project.repo_url}
             target="_blank"
           >
@@ -63,7 +63,7 @@ const Hero = ({ project, params }: IProps) => {
 
         <Button
           variant="white"
-          className="flex items-center gap-3"
+          className="flex items-center gap-3 mt-0"
           href={project.url}
           target="_blank"
         >
