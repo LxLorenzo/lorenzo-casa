@@ -12,7 +12,6 @@ const incrementProjectList = 3
 
 const ProjectsFeed = () => {
   const [displayProjects, setDisplayProjects] = useState(initialProjectList)
-  const [project, setProject] = useState(projects)
 
   const handleLoadMore = () => {
     setDisplayProjects(displayProjects + incrementProjectList)
@@ -21,12 +20,15 @@ const ProjectsFeed = () => {
   return (
     <>
       <div className="flex flex-col gap-6 xl:gap-12 sm:flex-wrap sm:flex-row justify-center">
-        {project.slice(0, displayProjects).map((project: IProject) => (
+        {projects.slice(0, displayProjects).map((project: IProject) => (
           <Project key={project.id} project={project} />
         ))}
       </div>
-      {displayProjects < project.length && (
+      {displayProjects < projects.length && (
         <Button onClick={handleLoadMore}>Carregar mais</Button>
+      )}
+      {displayProjects === projects.length && (
+        <Button href="/projects">Ver todos</Button>
       )}
     </>
   )
