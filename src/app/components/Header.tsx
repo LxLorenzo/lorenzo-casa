@@ -30,7 +30,12 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <div className="hidden lg:flex">
+      <div className="hidden lg:flex gap-5 lg:basis-[203.8px] xl:basis-[244.56px] justify-end">
+        <ReactCountryFlag
+          countryCode="BR"
+          svg
+          className="text-xl cursor-pointer"
+        />
         <ThemeSwitcher />
       </div>
       {!isMenuOpen ? (
