@@ -2,12 +2,28 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { RiCloseFill } from 'react-icons/ri'
 import ThemeSwitcher from './ThemeSwitcher'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const menuRef: React.RefObject<HTMLDivElement> = useRef(null)
+
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
+        setIsMenuOpen(false)
+      }
+    }
+
+    document.addEventListener('click', handleClickOutside)
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside)
+    }
+  })
+
   return (
     <header className="container mx-auto flex justify-between items-center px-2 sm:px-4 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-5 relative">
       <Link
@@ -51,6 +67,7 @@ const Header = () => {
         </div>
       )}
       <div
+        ref={menuRef}
         className={`menu lg:hidden fixed flex flex-col right-0 top-0 w-2/3 sm:w-1/2  h-screen rounded-l-lg items-center text-center justify-between ${
           isMenuOpen ? 'translate-x-0' : 'translate-x-full'
         } ease-in-out duration-300 z-40`}
