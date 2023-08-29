@@ -31,7 +31,7 @@ body {
 
 @layer base {
 	body {
-		@apply dark:bg-none dark:bg-[#0e0e10]
+		@apply dark:bg-none dark:bg-[#09090a]
 	}
 	h1,h2,h3,h4,h5,h6 {
 		@apply dark:text-zinc-50
