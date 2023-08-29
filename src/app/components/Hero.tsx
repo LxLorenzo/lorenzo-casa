@@ -13,10 +13,10 @@ const Hero = () => {
       <h1 className="text-[2.5rem] sm:text-[3.5rem] md:text-[3.3rem] lg:text-[4.2rem] xl:text-[5rem] 2xl:text-[5.5rem] font-bold text-primary flex flex-col">
         Seu próximo desenvolvedor
         <span className="gradient__text font-black text-[2.8rem] sm:text-[3.1rem] md:text-[3.6rem] lg:text-[4.6rem] xl:text-[5.3rem] 2xl:text-[5.8rem]">
-          Front-End :)
+          Front-End :&#41;
         </span>
       </h1>
-      <p className="text-sm sm:text-base text-zinc-500 mt-5 dark:text-zinc-200">
+      <p className="text-sm sm:text-base text-zinc-600 mt-5 dark:text-zinc-200">
         Olá! Meu nome é Lorenzo Casa, sou desenvolvedor Front-End React.js e
         Next.js.
         <br />

@@ -74,5 +74,5 @@ p {
 
 /* prettier-ignore */
 ::-webkit-scrollbar-thumb {
-  @apply bg-zinc-300 dark:bg-zinc-50 rounded-lg
+  @apply bg-zinc-300 rounded-lg
 }

@@ -23,7 +23,7 @@ const Contact = () => {
       <h2 className="text-[2rem] md:text-[2.5rem] lg:text-[3rem] xl:text-[3.5rem] 2xl:text-[4rem] font-bold text-primary">
         Contato
       </h2>
-      <p className="text-zinc-500 text-center">
+      <p className="text-zinc-500 text-center dark:text-zinc-200 font-light">
         Ficou interessado? Entre em contato comigo por algum dos links abaixo.
       </p>
       <div className="flex flex-col gap-2.5 md:flex-row md:flex-wrap md:justify-center">

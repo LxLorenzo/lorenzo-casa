@@ -18,16 +18,16 @@ const About = () => {
           alt="Perfil"
           className="rounded-full border-[3px] border-zinc-950"
         />
-        <div className="text-zinc-500 mt-12 text-justify relative dark:text-zinc-50">
+        <div className="text-zinc-950 mt-12 text-justify relative dark:text-zinc-50">
           <div className="absolute w-[150px] sm:w-[200px] h-[40px] dark:bg-transparent bg-firstGradientPattern blur-[150px] z-20" />
-          <p>
+          <p className="font-light">
             Sou um entusiasta da web e sou movido pelo desafio de criar
             interfaces interativas e responsivas que proporcionem uma
             experiência excepcional aos usuários. Com um olhar atento ao design
             e à usabilidade, sempre busco aprimorar minhas habilidades para
             oferecer soluções modernas e inovadoras.
           </p>
-          <p>
+          <p className="font-light">
             Meu objetivo é continuar crescendo como desenvolvedor front-end,
             participando de projetos desafiadores e inovadores. Estou em busca
             de uma primeira oportunidades para contribuir com meu conhecimento

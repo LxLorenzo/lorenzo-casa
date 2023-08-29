@@ -9,7 +9,7 @@ const Projects = () => {
       <h2 className="text-[2rem] md:text-[2.5rem] lg:text-[3rem] xl:text-[3.5rem] 2xl:text-[4rem] font-bold text-primary">
         Projetos
       </h2>
-      <p className="text-zinc-500 text-center dark:text-zinc-200">
+      <p className="text-zinc-500 text-center dark:text-zinc-200 font-light">
         Conheça algum de meus projetos e meus conhecimentos.
       </p>
       <ProjectsFeed />
