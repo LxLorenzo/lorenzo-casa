@@ -18,6 +18,7 @@ export const metadata: Metadata = {
   description:
     'Front-end developer e estudante. Apaixonado por tecnologia. Meu nome é Lorenzo Casa e este é meu portfólio. Aqui você pode encontrar meus projetos, sobre mim e muito mais.',
   colorScheme: 'dark light',
+
   keywords: [
     'lorenzo',
     'casa',
