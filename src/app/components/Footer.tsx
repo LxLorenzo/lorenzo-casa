@@ -16,6 +16,9 @@ const Footer = () => {
           <Link href="#about" className="hover:text-zinc-400 transition">
             Sobre
           </Link>
+          <Link href="#experiencia" className="hover:text-zinc-400 transition">
+            Experiência
+          </Link>
           <Link href="#projects" className="hover:text-zinc-400 transition">
             Projetos
           </Link>
