@@ -11,7 +11,7 @@ const ProfessionalExperience = () => {
         Conheça um pouco da minha trajetória profissional.
       </p>
       <div className="flex flex-col gap-5 justify-center items-center">
-        <div className="sm:p-6 flex justify-center items-center gap-5 rounded-md hover:bg-zinc-100 transition shadow-md border border-primary p-5 dark:border-zinc-50 dark:hover:bg-neutral-900">
+        <div className="sm:p-6 flex justify-center items-center gap-5 rounded-md hover:bg-zinc-100 transition shadow-md border border-primary p-5 dark:border-zinc-50 dark:hover:bg-neutral-900 max-w-[768px] w-full">
           <div className="flex flex-col gap-1 p-3 w-1/3">
             <h3 className="text-lg font-semibold text-primary">Desenvolvedor Front-end</h3>
             <p className="text-sm text-zinc-500 dark:text-zinc-200">Prime Web</p>
@@ -25,7 +25,7 @@ const ProfessionalExperience = () => {
             </div>
           </div>
         </div>
-        <div className="sm:p-6 flex justify-center items-center gap-5 rounded-md hover:bg-zinc-100 transition shadow-md border border-primary p-5 dark:border-zinc-50 dark:hover:bg-neutral-900">
+        <div className="sm:p-6 flex justify-center items-center gap-5 rounded-md hover:bg-zinc-100 transition shadow-md border border-primary p-5 dark:border-zinc-50 dark:hover:bg-neutral-900 max-w-[768px] w-full">
           <div className="flex flex-col gap-1 p-3 w-1/3">
             <h3 className="text-lg font-semibold text-primary">Estágio Front-end</h3>
             <p className="text-sm text-zinc-500 dark:text-zinc-200">Prime Web</p>
