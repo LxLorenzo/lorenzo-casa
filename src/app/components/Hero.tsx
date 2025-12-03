@@ -46,9 +46,9 @@ const Hero = () => {
         <Button
           variant="white"
           className="flex items-center gap-3 font-bold mt-0 md:mt-10"
-          href="/CV Lorenzo Ferrini Gueda Casa.pdf"
+          href="/CV_Lorenzo_Ferrini_Gueda_Casa.pdf"
           target="_blank"
-          download={'CV Lorenzo Ferrini Gueda Casa.pdf'}
+          download={'CV_Lorenzo_Ferrini_Gueda_Casa.pdf'}
         >
           <BsDownload />
           Download CV
